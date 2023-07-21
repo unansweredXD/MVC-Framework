@@ -2,11 +2,10 @@
 
 namespace core\Controller;
 
-use core\Controller\Controller;
 use core\View\JsonView;
 use core\View\View;
 
-class ErrorController extends Controller {
+class ErrorController {
     public function notFoundAction(): View {
         return new JsonView([
             'success' => false,
